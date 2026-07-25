@@ -1,435 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muhammad Faiz Fatullah | Security-Focused Software Developer Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
+<title>Muhammad Faiz Fatullah | e-Portfolio</title>
 
-    header {
-      background: linear-gradient(135deg, #020617, #1e293b, #0f766e);
-      padding: 70px 10%;
-      text-align: center;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    header h1 {
-      font-size: 2.5rem;
-      color: #ffffff;
-      margin-bottom: 10px;
-    }
+<style>
 
-    header h2 {
-      font-size: 1.2rem;
-      color: #5eead4;
-      margin-bottom: 20px;
-      font-weight: normal;
-    }
-
-    header p {
-      max-width: 800px;
-      margin: 0 auto;
-      color: #cbd5e1;
-    }
-
-    nav {
-      background: #020617;
-      padding: 15px 10%;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      text-align: center;
-      border-bottom: 1px solid #1e293b;
-    }
-
-    nav a {
-      color: #e5e7eb;
-      text-decoration: none;
-      margin: 0 12px;
-      font-size: 0.95rem;
-    }
-
-    nav a:hover {
-      color: #5eead4;
-    }
-
-    section {
-      padding: 60px 10%;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      color: #5eead4;
-      margin-bottom: 25px;
-      border-left: 5px solid #5eead4;
-      padding-left: 15px;
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 25px;
-      border-radius: 15px;
-      margin-bottom: 20px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-      border: 1px solid #334155;
-    }
-
-    .card h3 {
-      color: #ffffff;
-      margin-bottom: 10px;
-    }
-
-    .card h4 {
-      color: #5eead4;
-      margin-bottom: 10px;
-      font-weight: normal;
-    }
-
-    ul {
-      margin-left: 20px;
-      margin-top: 10px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #0f766e;
-      color: white;
-      padding: 8px 12px;
-      border-radius: 20px;
-      margin: 5px;
-      font-size: 0.9rem;
-    }
-
-    .project-img,
-.certificate-img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #334155;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
-    .button-link {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 16px;
-      background: #0f766e;
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 10px;
-      font-size: 0.9rem;
-      transition: 0.3s;
-    }
-
-    .button-link:hover {
-      background: #14b8a6;
-      color: #020617;
-    }
-
-    .timeline {
-      border-left: 3px solid #5eead4;
-      padding-left: 20px;
-    }
-
-    .timeline-item {
-      margin-bottom: 25px;
-    }
-
-    .timeline-item h3 {
-      color: #ffffff;
-    }
-
-    .contact {
-      text-align: center;
-      background: #020617;
-    }
-
-    .profile-img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid #5eead4;
-  margin-bottom: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+body{
+background:#f5f7fb;
+color:#333;
 }
 
-    .contact a {
-      color: #5eead4;
-      text-decoration: none;
-    }
+header{
+background:linear-gradient(135deg,#0f4c81,#0077b6);
+color:white;
+padding:60px 20px;
+text-align:center;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #020617;
-      color: #94a3b8;
-      border-top: 1px solid #1e293b;
-    }
+.profile-img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid white;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+margin-bottom:20px;
+}
 
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
+header h1{
+font-size:42px;
+}
 
-      nav a {
-        display: inline-block;
-        margin: 6px;
-      }
-    }
-  </style>
+header p{
+margin-top:10px;
+font-size:18px;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+padding:40px 0;
+}
+
+section{
+margin-bottom:60px;
+}
+
+.section-title{
+font-size:32px;
+color:#0f4c81;
+margin-bottom:20px;
+position:relative;
+}
+
+.section-title::after{
+content:'';
+width:70px;
+height:4px;
+background:#0077b6;
+display:block;
+margin-top:8px;
+border-radius:20px;
+}
+
+.about p{
+line-height:1.8;
+font-size:17px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+margin-bottom:25px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+
+.skill{
+background:#0077b6;
+color:white;
+padding:12px;
+text-align:center;
+border-radius:10px;
+font-weight:500;
+}
+
+.project{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+margin-bottom:35px;
+}
+
+.project-img{
+width:100%;
+display:block;
+}
+
+.project-content{
+padding:25px;
+}
+
+.project-content h3{
+color:#0f4c81;
+margin-bottom:10px;
+}
+
+.project-content p{
+line-height:1.7;
+margin-bottom:18px;
+}
+
+.button-link{
+display:inline-block;
+padding:12px 24px;
+background:#0077b6;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+transition:.3s;
+}
+
+.button-link:hover{
+background:#023e8a;
+}
+
+.certificate{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+footer{
+background:#0f4c81;
+color:white;
+padding:35px;
+text-align:center;
+}
+
+footer a{
+color:white;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:30px;
+}
+
+.certificate{
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+}
+
+}
+
+</style>
+
 </head>
 <body>
 
-  <header>
-    <img src="profile.jpg" alt="Profile Picture" class="profile-img">
-    <h1>Muhammad Faiz Fatullah Bin Mohd Faisall</h1>
-    <h2>Software Developer (Security-Focused)</h2>
-    <p>
-      Computer Science student and PETRONAS scholar with experience in developing responsive web applications using HTML, CSS, JavaScript and PHP. Passionate about secure software development and cybersecurity practices, with knowledge in system development, debugging, networking fundamentals and secure coding concepts.
-    </p>
-  </header>
+<header>
 
-  <nav>
-    <a href="#profile">Profile</a>
-    <a href="#career">Career</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#plan">Plan</a>
-    <a href="#reflection">Reflection</a>
-  </nav>
+<img src="profile.jpg" alt="Profile Picture" class="profile-img">
 
-  <section id="profile">
-    <h2 class="section-title">Profile Summary</h2>
-    <div class="card">
-      <p>
-        I am currently pursuing a Bachelor in Computer Science (Internet Computing) with Honours at Universiti Sultan Zainal Abidin. My main interest is in web development, system development and secure software practices. As a future Software Developer with a security-focused mindset, I aim to build applications that are not only functional and user-friendly, but also safe, reliable and able to protect user data.
-      </p>
-    </div>
-  </section>
+<h1>Muhammad Faiz Fatullah</h1>
 
-  <section id="career">
-    <h2 class="section-title">Career Exploration</h2>
-    <div class="card">
-      <h3>Chosen Career Role: Software Developer (Security-Focused)</h3>
-      <p>
-        A security-focused software developer is responsible for designing, developing and maintaining software applications while applying secure coding practices. This role is important because modern applications store sensitive user data and are often exposed to cyber threats such as SQL injection, cross-site scripting, weak authentication and data leakage.
-      </p>
-      <ul>
-        <li>Develop secure web and software applications.</li>
-        <li>Implement authentication, authorization and role-based access control.</li>
-        <li>Apply input validation, password hashing and secure session management.</li>
-        <li>Debug systems and reduce security vulnerabilities.</li>
-        <li>Work with databases while ensuring proper handling of user information.</li>
-      </ul>
-    </div>
-  </section>
+<p>Computer Science Student | PETRONAS Scholar | Freelance Web Developer</p>
 
-  <section id="education">
-    <h2 class="section-title">Education</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Bachelor in Computer Science (Internet Computing) with Honours</h3>
-        <h4>Universiti Sultan Zainal Abidin | Oct 2023 - Present | CGPA: 3.65</h4>
-        <ul>
-          <li>Currently developing skills in web development, database management and internet technologies.</li>
-          <li>Gained exposure to software development, networking fundamentals and secure system practices.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Diploma in Islamic Studies with Information Technology</h3>
-        <h4>Universiti Sultan Zainal Abidin | Oct 2021 - Oct 2023 | CGPA: 3.35</h4>
-        <ul>
-          <li>Developed foundational knowledge in information technology, programming and computer systems.</li>
-          <li>Built analytical, communication and problem-solving skills through academic and project-based activities.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+</header>
 
-  <section id="experience">
-    <h2 class="section-title">Work Experience</h2>
-    <div class="card">
-      <h3>Web Developer - Freelance</h3>
-      <h4>Nov 2025 - Present</h4>
-      <ul>
-        <li>Independently designed, developed and maintained responsive web applications with focus on functionality, user experience and system security.</li>
-        <li>Implemented secure coding practices including input validation, authentication and session management using Laravel 9 and CodeIgniter 4.</li>
-        <li>Debugged and resolved technical issues while ensuring proper handling of user data and smooth system performance.</li>
-      </ul>
-    </div>
-  </section>
+<div class="container">
 
-  <section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="gymgamifyss.png" alt="GymGamify Project Screenshot" class="project-img">
-        <h3>Gym Management System (Gamification-Based)</h3>
-        <h4>Final Year Project | Ongoing</h4>
-        <ul>
-          <li>Designed and developed a gym management system integrated with gamification features such as points, rewards and progress tracking.</li>
-          <li>Implemented secure login authentication, input validation and role-based access for users, trainers and administrators.</li>
-        </ul>
-        <a href="https://0174439501.unisza.work/fitness/" target="_blank" class="button-link">View Project</a>
-      </div>
-      <div class="card">
-        <img src="fiqhoriass.png" alt="Fiqhoria Project Screenshot" class="project-img">
-        <h3>Fiqhoria: Web-Based Fiqh Learning Resource System</h3>
-        <h4>Freelance Project</h4>
-        <ul>
-          <li>Developed a responsive web-based platform for accessing and managing Fiqh learning resources.</li>
-          <li>Collaborated with client requirements while ensuring functionality, usability and proper system structure.</li>
-        </ul>
-        <a href="https://www.fiqhoria.com/fiqhoria/" target="_blank" class="button-link">View Project</a>
-      </div>
-    </div>
-  </section>
+<section class="about">
 
-  <section id="skills">
-    <h2 class="section-title">Skills Assessment</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Technical Skills</h3>
-        <span class="tag">PHP</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">Python</span>
-        <span class="tag">Laravel 9</span>
-        <span class="tag">CodeIgniter 4</span>
-        <span class="tag">MySQL</span>
-      </div>
-      <div class="card">
-        <h3>Cybersecurity & Networking Skills</h3>
-        <span class="tag">Basic Networking</span>
-        <span class="tag">Secure Coding</span>
-        <span class="tag">Authentication</span>
-        <span class="tag">Input Validation</span>
-        <span class="tag">Packet Analysis</span>
-        <span class="tag">Linux Fundamentals</span>
-        <span class="tag">Troubleshooting</span>
-      </div>
-      <div class="card">
-        <h3>Soft Skills</h3>
-        <span class="tag">Problem Solving</span>
-        <span class="tag">Teamwork</span>
-        <span class="tag">Communication</span>
-        <span class="tag">Leadership</span>
-        <span class="tag">Responsibility</span>
-        <span class="tag">Punctuality</span>
-      </div>
-    </div>
+<h2 class="section-title">About Me</h2>
 
-    <div class="card">
-      <h3>Skills to Improve</h3>
-      <p>
-        To become more suitable for a security-focused software development career, I plan to improve my knowledge in OWASP Top 10, advanced Linux, API security, penetration testing basics, cloud security and security auditing.
-      </p>
-    </div>
-  </section>
+<div class="card">
 
-  <section id="plan">
-    <h2 class="section-title">Career Development Plan</h2>
-    <div class="timeline">
-      <div class="timeline-item card">
-        <h3>Short-Term Goals (1 - 2 Years)</h3>
-        <ul>
-          <li>Complete internship in software development, IT or cybersecurity related field.</li>
-          <li>Improve secure coding skills by learning OWASP Top 10 and web application vulnerabilities.</li>
-          <li>Learn tools such as Wireshark, Linux and Git/GitHub more deeply.</li>
-          <li>Prepare for beginner-level certifications such as CompTIA Security+ or CCNA.</li>
-        </ul>
-      </div>
-      <div class="timeline-item card">
-        <h3>Long-Term Goals (3 - 5 Years)</h3>
-        <ul>
-          <li>Become a Software Developer with strong security awareness and secure coding ability.</li>
-          <li>Work in PETRONAS or a technology company that values cybersecurity and digital transformation.</li>
-          <li>Develop secure enterprise systems that protect user data and support business operations.</li>
-          <li>Continue professional development through certifications and real industry experience.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<p>
 
-  <section id="evidence">
-    <h2 class="section-title">Certificates of Learning</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>HTML Essentials</h3>
-        <p>Offered by Cisco Networking Academy. Completed foundational training in HTML, web page structure, elements, forms and responsive web content.</p>
-        <a href="HTML_Essentials_certificate_faizfatullah223-gmail-com_6447d19b-a76a-40d8-9878-0a98ed93f20c.pdf" target="_blank" class="button-link">View Certificate</a>
-      </div>
-      <div class="card">
-        <h3>Python Essentials 1</h3>
-        <p>Offered by Cisco Networking Academy. Gained foundational knowledge in Python programming, variables, data types, control structures and basic problem solving.</p>
-        <a href="Python_Essentials_1_certificate_faizfatullah223-gmail-com_4d153b78-90ee-4a23-9a4f-f8c7679c2ad5.pdf" target="_blank" class="button-link">View Certificate</a>
-      </div>
-    </div>
-  </section>
+I am a Computer Science (Internet Computing) student at Universiti Sultan Zainal Abidin (UniSZA) and a PETRONAS Scholar. Passionate about web development, I have experience building responsive web applications using HTML, CSS, JavaScript, PHP, Laravel and CodeIgniter.
 
-  <section id="leadership">
-    <h2 class="section-title">Leadership & Involvement</h2>
-    <div class="card">
-      <ul>
-        <li>SovaTech Laptop Service Outreach - Assisted in laptop repair and on-site support for UniSZA students across Terengganu.</li>
-        <li>Head of Multimedia, Majlis Kolej Kediaman (MKK) - Managed multimedia content and addressed student-related issues within the residential college.</li>
-        <li>SULAM Community Project - Improved digital marketing and social media engagement for a local tuition centre.</li>
-        <li>PETRONAS Education Sponsorship Programme volunteer activities and scholarship engagement.</li>
-      </ul>
-    </div>
-  </section>
+I enjoy solving real-world problems through technology and continuously improving my programming skills by developing practical systems for clients and academic projects.
 
-  <section id="reflection">
-    <h2 class="section-title">Personal Reflection</h2>
-    <div class="card">
-      <h3>Dream Company: PETRONAS</h3>
-      <p>
-        I want to work with PETRONAS because it is one of the leading companies in Malaysia and has strong involvement in digital transformation, innovation and technology. As a PETRONAS scholar, I am motivated to contribute back by applying my knowledge in software development and secure system practices.
-      </p>
-      <br />
-      <p>
-        The value I can bring to PETRONAS is my ability to develop web-based systems, understand user requirements, solve technical problems and improve system security. My strengths are responsibility, punctuality, willingness to learn and problem-solving skills. However, I still need to improve my advanced cybersecurity knowledge, especially in penetration testing, cloud security and security auditing. I believe continuous learning and real industry exposure will help me become a more competent security-focused software developer.
-      </p>
-    </div>
-  </section>
+</p>
 
-  <section class="contact" id="contact">
-    <h2 class="section-title">Contact</h2>
-    <p>Email: <a href="mailto:faizfatullah223@gmail.com">faizfatullah223@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/faiz-fatullah" target="_blank">www.linkedin.com/in/faiz-fatullah</a></p>
-    <p>Location: Alor Setar, Kedah</p>
-  </section>
+</div>
 
-  <footer>
-    <p>&copy; 2026 Muhammad Faiz Fatullah. Personal Career Development Portfolio.</p>
-  </footer>
+</section>
+
+<section>
+
+<h2 class="section-title">Education</h2>
+
+<div class="card">
+
+<h3>Bachelor of Computer Science (Internet Computing)</h3>
+
+<p>Universiti Sultan Zainal Abidin (UniSZA)</p>
+
+<p>CGPA : <b>3.65</b></p>
+
+</div>
+
+<div class="card">
+
+<h3>Diploma in Islamic Studies with Information Technology</h3>
+
+<p>Universiti Sultan Zainal Abidin (UniSZA)</p>
+
+<p>CGPA : <b>3.35</b></p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">PHP</div>
+<div class="skill">Python</div>
+<div class="skill">Laravel 9</div>
+<div class="skill">CodeIgniter 4</div>
+<div class="skill">Flutter</div>
+<div class="skill">MySQL</div>
+<div class="skill">Power BI</div>
+<div class="skill">Arduino</div>
+<div class="skill">Canva</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Featured Projects</h2>
+
+<div class="project">
+
+<img src="gymgamifyss.png" alt="GymGamify Project Screenshot" class="project-img">
+
+<div class="project-content">
+
+<h3>GymGamify - Gym Management System</h3>
+
+<p>
+
+A gamification-based gym management system developed as my Final Year Project. The system includes attendance tracking, rewards, points, leaderboard, challenges and progress monitoring.
+
+</p>
+
+<a href="https://0174439501.unisza.work/fitness/" target="_blank" class="button-link">View Project</a>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="fiqhoriass.png" alt="Fiqhoria Project Screenshot" class="project-img">
+
+<div class="project-content">
+
+<h3>Fiqhoria</h3>
+
+<p>
+
+A web-based Islamic learning platform developed for a client to provide Fiqh learning resources with a responsive and user-friendly interface.
+
+</p>
+
+<a href="https://www.fiqhoria.com/fiqhoria/" target="_blank" class="button-link">View Project</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Certificates</h2>
+
+<div class="certificate">
+
+<div>
+
+<h3>HTML Essentials</h3>
+
+<p>Cisco Networking Academy</p>
+
+</div>
+
+<a href="HTML_Essentials_certificate_faizfatullah223-gmail-com_6447d19b-a76a-40d8-9878-0a98ed93f20c.pdf" target="_blank" class="button-link">
+
+View Certificate
+
+</a>
+
+</div>
+
+<div class="certificate">
+
+<div>
+
+<h3>Python Essentials 1</h3>
+
+<p>Cisco Networking Academy</p>
+
+</div>
+
+<a href="Python_Essentials_1_certificate_faizfatullah223-gmail-com_4d153b78-90ee-4a23-9a4f-f8c7679c2ad5.pdf" target="_blank" class="button-link">
+
+View Certificate
+
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card">
+
+<p><strong>Email:</strong>
+
+<a href="mailto:faizfatullah223@gmail.com">
+
+faizfatullah223@gmail.com
+
+</a>
+
+</p>
+
+<br>
+
+<p><strong>LinkedIn:</strong>
+
+<a href="https://www.linkedin.com/in/faiz-fatullah" target="_blank">
+
+www.linkedin.com/in/faiz-fatullah
+
+</a>
+
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+<h3>Thank You for Visiting My Portfolio</h3>
+
+<p>© 2026 Muhammad Faiz Fatullah</p>
+
+</footer>
 
 </body>
 </html>
